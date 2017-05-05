@@ -40,7 +40,11 @@ echo "<div class='elgg-subtext'>" . elgg_echo("tell_a_friend:share:required") . 
 echo "<div class='elgg-foot'>";
 echo elgg_view("input/submit", array("value" => elgg_echo("send")));
 echo "</div>";
-?>
+
+/* no required for Elgg 2.3+
 <script>
 elgg.userpicker.init();
 </script>
+*/
+?>
+<?php
